@@ -4,8 +4,6 @@ import { useInfiniteQuery } from "@tanstack/react-query";
 import UserCard from "@/components/user-card";
 import axios from "axios";
 
-const PAGE_SIZE = 5;
-
 interface User {
   id: string;
   name: string;

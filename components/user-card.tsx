@@ -1,7 +1,13 @@
 // components/UserCard.js
 import React from "react";
-
-const UserCard = ({ user }) => {
+interface User {
+  id: string;
+  name: string;
+  email: string;
+  username: string;
+  bio: string;
+}
+const UserCard = ({ user }: { user: User }) => {
   return (
     <div className="bg-white rounded-lg shadow-md p-4 mb-4">
       <h2 className="text-xl font-semibold mb-2 text-black">{user.name}</h2>
